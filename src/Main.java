@@ -5,18 +5,26 @@ import java.util.Random;
 
 class Calculator {
 
-    public double add(double a, double b){
-        return (a+b);
-    }
+    private int a;
+    private  int b;
+
+   public  Calculator(){
+       System.out.println("Hello default");
+   }
+
+   public  Calculator(int a, int b){
+       this.a = a;
+       this.b  = b;
+       System.out.println("Hello parameterized");
+   }
+
+
 }
 
 public class Main {
     public static void main(String[] args) {
 
-        StringBuffer sb = new StringBuffer("Rishikesh");
-
-        sb.append(" Revandikar");
-        System.out.println(sb);
+        Calculator c = new Calculator(1,2);
 
 
     }
