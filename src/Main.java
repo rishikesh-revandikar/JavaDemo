@@ -1,3 +1,5 @@
+import NewCodes.Tools;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
@@ -18,14 +20,22 @@ class Calculator {
        System.out.println("Hello parameterized");
    }
 
+}
 
+class AdvancedCalc extends Calculator {
+
+    public AdvancedCalc(){
+        super(1,2);
+        System.out.println("In advanced calc");
+    }
 }
 
 public class Main {
     public static void main(String[] args) {
 
-        Calculator c = new Calculator(1,2);
-        Calculator c1 = new Calculator(2,2);
+        AdvancedCalc a = new AdvancedCalc();
+
+        Tools t = new Tools();
 
 
     }
