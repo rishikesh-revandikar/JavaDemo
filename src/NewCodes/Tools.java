@@ -1,8 +1,7 @@
 package NewCodes;
 
-public class Tools {
+public abstract class Tools {
 
-    public  Tools(){
-        System.out.println("Tools");
-    }
+    public abstract void useTools();
+
 }

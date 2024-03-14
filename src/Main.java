@@ -1,15 +1,11 @@
-import NewCodes.Tools;
-
-import java.util.ArrayList;
-import java.util.Scanner;
-import javax.swing.JOptionPane;
-import java.util.Random;
-
+import NewCodes.Screwdriver;
 
 public class Main {
     public static void main(String[] args) {
 
+        Screwdriver s = new Screwdriver();
 
+        s.useTools();
 
 
     }
